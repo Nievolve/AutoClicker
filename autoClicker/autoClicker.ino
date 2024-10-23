@@ -4,24 +4,26 @@ Servo myServo;
 
 int potVal;
 int choice;
+i
 void setup() {
   myServo.attach(5);
-  
+
 
 }
 
 void loop() {
 
-
-  potVal = 180;  // Saknade semikolon åtgärdat
+  // Cycle
+  potVal = 180;
   
   myServo.write(potVal);  
 
-  delay(1500);
+  delay(30000);
   
-  potVal = 100;  
+  potVal = 100; 
   
   myServo.write(potVal);  
 
-  delay(1500);
+  delay(200);
+  //Cycle off
 }
