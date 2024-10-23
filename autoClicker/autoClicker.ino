@@ -3,13 +3,16 @@
 Servo myServo;
 
 int potVal;
-
+int choice;
 void setup() {
   myServo.attach(5);
+  
 
 }
 
 void loop() {
+
+
   potVal = 180;  // Saknade semikolon åtgärdat
   
   myServo.write(potVal);  
