@@ -4,9 +4,8 @@ Servo myServo;
 
 int potVal;
 int choice;
-
 void setup() {
-  myServo.attach(5);
+  myServo.attach(5); //Pin for servo
 
 
 }
@@ -14,16 +13,16 @@ void setup() {
 void loop() {
 
   // Cycle
-  potVal = 180;
+  potVal = 180; //Neutral
   
   myServo.write(potVal);  
 
-  delay(30000);
+  delay(1500);
   
-  potVal = 100; 
+  potVal = 100; //Push contact
   
   myServo.write(potVal);  
 
-  delay(200);
+  delay(2150000);
   //Cycle off
 }
