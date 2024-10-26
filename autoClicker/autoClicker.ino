@@ -14,16 +14,16 @@ void setup() {
 void loop() {
 
   // Cycle
-  potVal = 180;
+  potVal = 160; // Push contact
   
   myServo.write(potVal);  
 
-  delay(30000);
+  delay(30000);//ms, wait time
   
-  potVal = 100; 
+  potVal = 90; // Neutral
   
   myServo.write(potVal);  
 
-  delay(200);
+  delay(200); //ms
   //Cycle off
 }

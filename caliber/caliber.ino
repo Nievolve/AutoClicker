@@ -13,16 +13,16 @@ void setup() {
 void loop() {
 
   // Cycle
-  potVal = 180; //Neutral
+  potVal = 160; //Push contact
   
   myServo.write(potVal);  
 
   delay(1500);
   
-  potVal = 100; //Push contact
+  potVal = 90; //Neutral
   
   myServo.write(potVal);  
 
-  delay(2150000);
+  delay(1500);
   //Cycle off
 }
