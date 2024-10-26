@@ -3,15 +3,15 @@
 Servo myServo;
 
 int potVal;
-int choice;
+
 void setup() {
   myServo.attach(5); //Pin for servo
-
+  Serial.begin(9600);
 
 }
 
 void loop() {
-
+  Serial.print("cycle");
   // Cycle
   potVal = 160; //Push contact
   
